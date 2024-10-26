@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(221, 209, 193);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    cursor: none;
+}
+
+.container {
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 10px;
+}
+
+.box {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-radius: 0 0 15px 15px;
+}
+
+.link {
+    display: block;
+    height: 100%;
+}
+
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background-color 0.3s ease;
+}
